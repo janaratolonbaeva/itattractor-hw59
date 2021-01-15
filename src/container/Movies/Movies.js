@@ -44,15 +44,13 @@ class Movies extends Component {
 		))
 		return (
 			<>
-				<div className="container">
-					<section className="movie-block">
+					<section className="movie-block mb-5">
 						<Add value={this.state.value} valueChange={this.valueChange} addMovie={this.addMovie}/>
 						<div className="mb-3">
 							<p>To watch list:</p>
 						</div>
 						{moviesList}
 					</section>
-				</div>
 			</>
 		);
 	}
